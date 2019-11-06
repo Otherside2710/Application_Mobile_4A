@@ -1,0 +1,12 @@
+{
+	"distro":[{
+		"name": "Ubuntu",
+		"Kernel": "Unix"
+	},
+	{
+		"name": "Kali-Linux",
+		"Kernel": "Unix"
+	}
+
+  ]
+}
