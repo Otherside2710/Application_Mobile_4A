@@ -5,6 +5,6 @@ import retrofit2.http.GET;
 
 public interface RestAPILinux {
 
-    //@GET("Linux.json")
-    //Call<RestAPILinuxResponse>
+    @GET("Linux.json")
+    Call<RestAPILinuxResponse> getListLinux();
 }
