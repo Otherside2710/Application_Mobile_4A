@@ -16,4 +16,7 @@ En 4ème année d'école d'ingénieur, à l'ESIEA, il nous a été demandé de r
 
 ###### Page d'accueil, avec la liste ( qui ici ne s'affiche pas suite à un bug d'API)
 
+![Navbar](https://user-images.githubusercontent.com/46956233/70865566-582e3980-1f5f-11ea-8814-34bf206fa94f.png)
+
+
 
