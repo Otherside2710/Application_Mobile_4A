@@ -31,16 +31,16 @@ public class MainController {
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 
-        RestAPILinux restF1Api = retrofit.create(RestAPILinux.class);
+        RestAPILinux restAPILinux = retrofit.create(RestAPILinux.class);
 
-        Call<RestAPILinuxResponse> call = restF1Api.getListLinux();
+        Call<RestAPILinuxResponse> call = restAPILinux.getListLinux();
         call.enqueue(new Callback<RestAPILinuxResponse>() {
             @Override
             public void onResponse(Call<RestAPILinuxResponse> call, Response<RestAPILinuxResponse> response) {
                 if (response.isSuccessful()) {
-                    RestAPILinuxResponse restF1Response = response.body();
-                    List<Linux> listLinux = restF1Response.getResults();
-                    activity.showList(listLinux);
+                    RestAPILinuxResponse restAPILinuxResponse = response.body();
+                    List<Linux> listLinux = restAPILinuxResponse.getResults();
+//                    activity.showList(listLinux);
                 } else {
                     System.out.println(response.errorBody());
                 }
